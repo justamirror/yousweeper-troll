@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Tetris",
+  "description": "A handy extension to open a little tetris game!",
+  "version": "1.0",
+  "permissions": [],
+ "action": {
+   "default_popup": "popup.html",
+    "default_icon": "logo.png"
+ },
+  "content_security_policy": {},
+   "content_scripts": [
+  {
+    "matches": ["https://www.youtube.com/*"],
+    "css": [],
+    "js": ["content-script.js"]
+  }
+  ]
+}
